@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Steering Vision-Language-Action Models Toward Effective Long-Tail Driving">
+  <meta name="keywords" content="SteerVLA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SteerVLA: Steering Vision-Language-Action Models Toward Effective Long-Tail Driving</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SteerVLA: Steering Vision-Language-Action Models Toward Effective Long-Tail Driving</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://skybhh19.github.io/">Tian Gao</a><sup>*,1</sup>,</span>
+            <span class="author-block">
+              <a href="https://celineltan.github.io">Celine Tan</a><sup>*,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/catglossop">Catherine Glossop</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/timothygao8710">Timothy Gao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://web.stanford.edu/~jksun/">Jiankai Sun</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/kylestach">Kyle Stachowicz</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cs.stanford.edu/~shirwu/">Shirley Wu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.oiermees.com/">Oier Mees</a><sup>2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://dorsa.fyi/">Dorsa Sadigh</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Stanford University</span>,
+            <span class="author-block"><sup>2</sup>UC Berkeley</span>,
+            <span class="author-block"><sup>3</sup>Microsoft</span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2602.08440"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2602.08440"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!--
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- 
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                  Dataset Link. -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">SteerVLA</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            A fundamental challenge in autonomous driving is the integration of high-level, semantic reasoning for long-tail events with low-level, reactive control for robust driving. While large vision-language models (VLMs) trained on web-scale data offer powerful common-sense reasoning, they lack the grounded experience necessary for safe vehicle control in driving scenarios. We posit that an effective autonomous agent should leverage the world knowledge and common-sense reasoning of VLMs to guide a grounded, steerable driving policy toward safe and robust control. To this end, we propose SteerVLA, which uses reasoning from VLMs to produce fine-grained language instructions that steer a vision–language–action (VLA) driving policy. Key to our method is the language interface between the high-level VLM and low-level VLA, which allows the high-level policy to better ground the nuances of its reasoning in the control outputs of the low-level policy. To provide fine-grained language supervision aligned with vehicle control, we leverage a VLM to augment existing driving data with dense language annotations in hindsight, which we find to be essential for effective reasoning and steerability. We evaluate SteerVLA on a challenging closed-loop benchmark, where it outperforms state-of-the-art methods by 4.77 driving score overall and by 8.04 points on a long-tail subset.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Figure 1. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Figure 1</h2> -->
+        <div class="figure-container">
+          <img src="./static/images/steervla_fig1.png" alt="Figure 1" style="width: 100%; max-width: 100%; height: auto;" />
+        </div>
+      </div>
+    </div>
+    <!--/ Figure 1. -->
+
+    <!-- Method Overview. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">SteerVLA</h2>
+        <div class="content has-text-justified">
+          <p>
+            We focus on the challenge of long-tail driving scenarios, where rare and unanticipated events require strong generalization and common-sense reasoning from the policy. VLAs are a strong backbone for driving because they combine semantic grounding from vision–language pretraining with domain-specific adaptation obtained via imitation learning on driving data. Building on this capability, we leverage the reasoning and semantic inference abilities of VLMs and ground these inferences in driving control through fine-grained meta-actions that steer a VLA policy. Concretely, a high-level policy first reasons about the driving scene, historical vehicle states, and routing command to produce a meta-action, accompanied by a short reasoning trace that reasons over driving scenes and helps the policy generate more appropriate meta-actions. A steerable low-level VLA policy then executes this meta-action by predicting a set of waypoints determining the vehicle's target speed and position.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Figure 1</h2> -->
+        <div class="figure-container">
+          <img src="./static/images/method.png" alt="Method Overview" style="width: 100%; max-width: 100%; height: auto;" />
+        </div>
+      </div>
+    </div>
+    <!--/ Method Overview. -->
+
+    <!-- Main Experiment Results. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+          <div class="figure-container">
+            <img src="./static/images/bench2drive.png" alt="Figure 1" style="width: 100%; max-width: 100%; height: auto;" />
+          </div>
+          <p>
+            On Bench2Drive, we report overall performance and per-ability scores for SteerVLA across five advanced urban driving skills. SteerVLA significantly outperforms prior approaches, benefiting from improved reasoning and instruction-following capabilities.
+          </p>
+          <div class="figure-container">
+            <img src="./static/images/longtail.png" alt="Figure 1" style="width: 100%; max-width: 100%; height: auto;" />
+          </div>
+          <p>
+            We compare SteerVLA with the state-of-the-art method <a href = "https://arxiv.org/pdf/2503.09594">SimLingo</a> on Bench2Drive-LongTail. SteerVLA exhibits larger performance gains in long-tail scenarios, likely because these cases require more complex reasoning and more precise control.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Main Experiment Results. -->
+
+    <!-- 
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Examples in nuScenes</h2>
+        <div class="content has-text-justified">
+          <p>
+            [Examples in nuScenes content goes here]
+          </p>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{gao2026steervlasteeringvisionlanguageactionmodels,
+      title={SteerVLA: Steering Vision-Language-Action Models in Long-Tail Driving Scenarios}, 
+      author={Tian Gao and Celine Tan and Catherine Glossop and Timothy Gao and Jiankai Sun and Kyle Stachowicz and Shirley Wu and Oier Mees and Dorsa Sadigh and Sergey Levine and Chelsea Finn},
+      year={2026},
+      eprint={2602.08440},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.08440}, 
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
