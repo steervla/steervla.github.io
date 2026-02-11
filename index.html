@@ -44,7 +44,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SteerVLA: Steering Vision-Language-Action Models Toward Effective Long-Tail Driving</h1>
+          <h1 class="title is-1 publication-title">SteerVLA: Steering Vision-Language-Action Models in Long-Tail Driving Scenarios</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://skybhh19.github.io/">Tian Gao</a><sup>*,1</sup>,</span>
@@ -150,6 +150,14 @@
   </div>
 </section>
 
+<section class="hero teaser teaser-video">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="hero-body">
+      <img src="static/videos/grid_output_lite.gif" alt="SteerVLA overview" style="width: 100%; max-width: 100%; height: auto; border-radius: 10px;" />
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -214,6 +222,52 @@
           <p>
             We compare SteerVLA with the state-of-the-art method <a href = "https://arxiv.org/pdf/2503.09594">SimLingo</a> on Bench2Drive-LongTail. SteerVLA exhibits larger performance gains in long-tail scenarios, likely because these cases require more complex reasoning and more precise control.
           </p>
+
+          <h3 class="title is-4">Scenario Rollouts</h3>
+          <p class="has-text-justified">
+            Sample closed-loop rollouts from SteerVLA on diverse long-tail driving scenarios.
+          </p>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column has-text-centered">
+              <video controls muted loop playsinline width="80%" style="border-radius: 8px;">
+                <source src="static/videos/033RouteScenario_2539_rep0_Town12_Accident.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-weight-semibold">Accident</p>
+              <p class="is-size-7">SteerVLA responds to an accident blocking the road.</p>
+            </div>
+            <div class="column has-text-centered">
+              <video controls muted loop playsinline width="80%" style="border-radius: 8px;">
+                <source src="static/videos/041RouteScenario_2790_rep0_Town12_InvadingTurn.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-weight-semibold">Invading Turn</p>
+              <p class="is-size-7">A car in the oncoming lane turns into the current lane.</p>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column has-text-centered">
+              <video controls muted loop playsinline width="80%" style="border-radius: 8px;">
+                <source src="static/videos/091RouteScenario_3731_rep0_Town13_VehicleTurningRoutePedestrian.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-weight-semibold">Turning Route Pedestrian</p>
+              <p class="is-size-7">The vehicle is turning and a pedestrian is crossing the road.</p>
+            </div>
+            <div class="column has-text-centered">
+              <video controls muted loop playsinline width="80%" style="border-radius: 8px;">
+                <source src="static/videos/151RouteScenario_24294_rep0_Town02_ParkingCrossingPedestrian.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-weight-semibold">Crossing Pedestrian</p>
+              <p class="is-size-7">The vehicle encounters a jaywalking pedestrian crossing the road.</p>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-half is-offset-one-quarter has-text-centered">
+              <video controls muted loop playsinline width="80%" style="border-radius: 8px;">
+                <source src="static/videos/158RouteScenario_24781_rep0_Town01_HardBreakRoute.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-weight-semibold">Hard Brake</p>
+              <p class="is-size-7">The leading vehicle brakes suddenly.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
