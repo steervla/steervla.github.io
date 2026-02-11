@@ -27,8 +27,14 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser-video {
+  background: #f5f5f5;
+  padding: 40px 0 0 0;
+}
+
 
 .publication-title {
+  font-family: 'Google Sans', sans-serif;
 }
 
 .publication-banner {
@@ -45,10 +51,12 @@ body {
 }
 
 .publication-header .hero-body {
+  font-family: 'Google Sans', sans-serif;
 }
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
 }
 
 .publication-authors {
