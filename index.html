@@ -192,7 +192,22 @@
         <h2 class="title is-3">SteerVLA</h2>
         <div class="content has-text-justified">
           <p>
-            We focus on the challenge of long-tail driving scenarios, where rare and unanticipated events require strong generalization and common-sense reasoning from the policy. VLAs are a strong backbone for driving because they combine semantic grounding from vision–language pretraining with domain-specific adaptation obtained via imitation learning on driving data. Building on this capability, we leverage the reasoning and semantic inference abilities of VLMs and ground these inferences in driving control through fine-grained meta-actions that steer a VLA policy. Concretely, a high-level policy first reasons about the driving scene, historical vehicle states, and routing command to produce a meta-action, accompanied by a short reasoning trace that reasons over driving scenes and helps the policy generate more appropriate meta-actions. A steerable low-level VLA policy then executes this meta-action by predicting a set of waypoints determining the vehicle's target speed and position.
+            We focus on the challenge of long-tail driving scenarios, 
+            where rare and unanticipated events require strong generalization 
+            and common-sense reasoning from the policy. VLAs are a strong backbone 
+            for driving because they combine semantic grounding from vision–language 
+            pretraining with domain-specific adaptation obtained via imitation learning 
+            on driving data. Building on this capability, we leverage the reasoning and 
+            semantic inference abilities of VLMs and ground these inferences in driving 
+            control through fine-grained meta-actions that steer a VLA policy. Concretely, 
+            a high-level policy first reasons about the driving scene, historical vehicle 
+            states, and routing command to produce a meta-action, accompanied by a short 
+            reasoning trace that reasons over driving scenes and helps the policy generate 
+            more appropriate meta-actions. The low-level VLA then predicts future waypoints 
+            conditioned on both the observation and the meta-action. This design improves 
+            generalization by offloading high-level reasoning to the high-level policy, 
+            while allowing the VLA to specialize in fast and accurate waypoint prediction 
+            conditioned on the high-level’s instructions.
           </p>
         </div>
       </div>
