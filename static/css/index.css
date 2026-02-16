@@ -32,6 +32,14 @@ body {
   padding: 40px 0 0 0;
 }
 
+.teaser-takeaway {
+  max-width: 42rem;
+  margin: 1.25rem auto 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #363636;
+}
+
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
